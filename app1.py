@@ -4,7 +4,6 @@ app = Flask(__name__)
 app.json.ensure_ascii = False
 app.json.sort_keys = False
 
-# Dữ liệu mẫu (Sample Data)
 SAMPLE_DATA = {
     "students": [
         {
