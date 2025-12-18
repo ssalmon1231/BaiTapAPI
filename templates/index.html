@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tra cứu xếp loại</title>
+    </head>
+
+    <body>
+        <h2>Yêu cầu nhập điểm</h2>
+
+         {% if error %}
+            <p style="color:red; font-weight:bold;">{{ error }}</p>
+        {% endif %}
+
+        <form action="/ketqua" method="post">
+            <label>Điểm toán: </label>
+            <input type="number" name="toan">
+
+            <br>
+
+            <label>Điểm văn: </label>
+            <input type="number" name="van">
+
+            <br>
+
+            <label>Điểm anh:</label>
+            <input type="number" name="anh">
+
+            <button type="submit">Xác nhận</button>
+        </form>        
+    </body>
+</html>
