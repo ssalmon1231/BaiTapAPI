@@ -30,7 +30,7 @@ Pet-Detection-Engine/
 ├── model.h5            # File model AI (Pre-trained)
 ├── requirements.txt    # Danh sách thư viện (Strict version)
 └── README.md           # Tài liệu hướng dẫn
-
+```
 # ⚙️ Hướng dẫn Cài đặt (Installation Instructions)
 
 Vui lòng thực hiện tuần tự các bước sau để đảm bảo chương trình chạy ổn định.
@@ -40,7 +40,7 @@ Vui lòng thực hiện tuần tự các bước sau để đảm bảo chương
 ```bash
 git clone [https://github.com/khoidesu/Pet-Detection-Engine.git](https://github.com/khoidesu/Pet-Detection-Engine.git)
 cd Pet-Detection-Engine
-
+```
 ## Bước 2: Tạo môi trường ảo (Virtual Environment)
 
 **Bắt buộc dùng Python 3.10**. Nếu máy bạn có nhiều phiên bản Python, hãy trỏ chính xác vào bản 3.10.
@@ -53,7 +53,7 @@ python -m venv venv
 
 # Mac/Linux
 python3.10 -m venv venv
-
+```
 ## Bước 3: Kích hoạt môi trường
 
 ```bash
@@ -62,14 +62,14 @@ python3.10 -m venv venv
 
 # MacOS/Linux
 source venv/bin/activate
-
+```
 ## Bước 4: Cài đặt thư viện
 
 Chạy lệnh sau để cài đặt các gói phụ thuộc từ file cấu hình:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## 5. Hướng dẫn Sử dụng (Usage)
 
 ### Khởi chạy Server
@@ -80,7 +80,7 @@ python app.py
 Khi server chạy thành công, terminal sẽ hiện thông báo:
 ```text
 Running on [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
+```
 ### Thao tác trên Web
 
 1. Mở trình duyệt (Chrome/Edge) truy cập: [http://127.0.0.1:5000](http://127.0.0.1:5000)
