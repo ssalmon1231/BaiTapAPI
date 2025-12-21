@@ -4,19 +4,18 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange)
 ![Flask](https://img.shields.io/badge/Backend-Flask-green)
 
-> **Hệ thống nhận diện thú cưng (Chó/Mèo) trên nền tảng Web.**
+> **Hệ thống nhận diện thú cưng trên nền tảng Web.**
 
 ## 1. Giới thiệu (Introduction)
 
-**Pet Detection Engine** là ứng dụng web sử dụng Deep Learning để tự động phát hiện, phân loại và khoanh vùng thú cưng trong hình ảnh. Dự án tích hợp mô hình CNN đã huấn luyện sẵn với Backend Flask để cung cấp giao diện người dùng trực quan, dễ sử dụng.
+**Pet Detection Engine** là ứng dụng web sử dụng Deep Learning để tự động phát hiện, phân loại và  thú cưng trong hình ảnh. Dự án tích hợp mô hình CNN đã huấn luyện sẵn với Backend Flask để cung cấp giao diện người dùng trực quan, dễ sử dụng.
 
 ⚠️ **YÊU CẦU BẮT BUỘC:** Dự án này được thiết kế đặc biệt để chạy trên **Python 3.10**. Việc sử dụng các phiên bản Python mới hơn (3.12, 3.13) sẽ gây ra lỗi không tương thích với thư viện TensorFlow 2.15.
 
 ## 2. Tính năng (Features)
 
 * **Giao diện Web:** Upload ảnh và xem kết quả trực quan trên trình duyệt.
-* **AI Detection:** Tự động vẽ khung (Bounding Box) quanh vật thể.
-* **Phân loại:** Xác định nhãn **Dog** (Chó) hoặc **Cat** (Mèo) kèm độ tin cậy.
+* **Phân loại:** Xác định nhãn **Dog** (Chó) hoặc **Cat** (Mèo) hoặc các thú cưng khác kèm độ tin cậy.
 
 ## 3. Cấu trúc dự án (Project Structure)
 
@@ -27,13 +26,12 @@ Pet-Detection-Engine/
 │   └── result.html     # Trang hiển thị kết quả
 ├── static/             # Chứa CSS, JS, ảnh upload
 ├── app.py              # File chạy Server (Flask)
-├── model.h5            # File model AI (Pre-trained)
-├── requirements.txt    # Danh sách thư viện (Strict version)
-└── README.md           # Tài liệu hướng dẫn
+├── requirements.txt    # Danh sách lib
+└── README.md           # Hướng dẫn
 ```
 # ⚙️ Hướng dẫn Cài đặt (Installation Instructions)
 
-Vui lòng thực hiện tuần tự các bước sau để đảm bảo chương trình chạy ổn định.
+Vui lòng thực hiện các bước sau theo thứ tự để đảm bảo chương trình chạy ổn định.
 
 ### Bước 1: Clone dự án
 
@@ -54,7 +52,7 @@ python -m venv venv
 # Mac/Linux
 python3.10 -m venv venv
 ```
-## Bước 3: Kích hoạt môi trường
+## Bước 3: Kích hoạt virtual environment
 
 ```bash
 # Windows
@@ -84,8 +82,8 @@ Running on [http://127.0.0.1:5000](http://127.0.0.1:5000)
 ### Thao tác trên Web
 
 1. Mở trình duyệt (Chrome/Edge) truy cập: [http://127.0.0.1:5000](http://127.0.0.1:5000)
-2. Nhấn **Choose File** để chọn ảnh thú cưng từ máy tính.
-3. Nhấn nút **Upload/Detect**.
+2. Nhấn **Chọn ảnh** để chọn ảnh thú cưng từ máy tính.
+3. Nhấn nút **Bắt đầu nhận diện**.
 4. Hệ thống sẽ trả về kết quả nhận diện.
 
 ## ❗ Khắc phục lỗi thường gặp (Troubleshooting)
